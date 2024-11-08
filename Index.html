@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+<body>
+   
+   <!--navbar--> 
+   <nav class="navbar navbar-expand-lg bg-success shadow-sm">
+       <div class="container">
+           <a class="navbar-brand"> <img alt="logo" src="https://rabbil.com/build/assets/navlogo-cc5a3ac8.svg"
+           </a>
+        </div>
+       <button class="navbar-toggler" data-bs-target="" data-bs-toggle="collapse">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+   </nav>
+
+
+
+
+<!--from-->
+<div class="cotainer mt-3">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card rounded-3 p-4 shadow-lg">
+                <h1 class="row justify-content-center">FORM</h1>
+                <div>
+                    <level class="from-lebel">Name</level>
+                    <input placeholder="name" value="" type="text" class="form-control"/>
+                </div>
+            </br>
+                <div>
+                    <level class="from-lebel">Email</level>
+                    <input placeholder="email" value="" type="email" class="form-control"/>
+                </div>
+            </br>
+                <div>
+                    <level class="from-lebel">Range</level>
+                    <input placeholder="" max="100" min="0" type="range" class="form-range"/>
+                </div>
+            </br>
+                <div class="row">
+                    <div class="col-3">
+                        <level class="from-lebel">Male</level>
+                        <input placeholder="" value="" type="radio" class="form-check"/>
+                    </div>
+                    <div class="col-3">
+                        <level class="from-lebel">Female</level>
+                        <input placeholder="" value="" type="radio" class="form-check"/>
+                    </div>
+                </div>
+            </br>
+                <div>
+                    <level class="from-lebel">Checkbox</level>
+                    <input placeholder="" value="" type="checkbox" class="form-check"/>
+                </div>
+            </br>
+            <div>
+                <level class="from-lebel">City</level>
+                <select class="form-select">
+                    <option>Dhaka</option>
+                    <option>Satkhira</option>
+                    <option>Khulna</option>
+                    <option>Rajshahi</option>
+                </select>
+            </div>
+            </br>
+            <div class="row justify-content-center">
+                <button class="btn mt-3 btn-success"> Submit</button></br></br>
+                <button type="button" class="btn mt-3 btn">Basic</button></br></br>
+                <button type="button" class="btn mt-3 btn btn-default">Default</button></br></br>
+                <button type="button" class="btn btn-primary">Primary</button></br></br>
+                <button type="button" class="btn btn-success">Success</button></br></br>
+                <button type="button" class="btn btn-info">Info</button></br></br>
+                <button type="button" class="btn btn-warning">Warning</button></br></br>
+                <button type="button" class="btn btn-danger">Danger</button></br></br>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</br></br></br></br>
+<!--Table-->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="card p-4">
+                <div class="card p-4">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>1</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>2</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>3</td>
+                                <td>C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</br></br></br></br>
+<!--Alert-->
+
+<div class="container">
+    <div class="row ">
+        <div class="col-4">
+            <div class="alert alert-danger">
+                <h3>A simple alert </h3>
+            </div> 
+        </div>
+        <div class="col-4">
+            <div class="alert alert-success">
+                <h3>A simple alert </h3>
+            </div> 
+        </div>
+        <div class="col-4">
+            <div class="alert alert-warning">
+                <h3>A simple alert </h3>
+            </div> 
+        </div>
+    </div>
+</div>
+</br></br></br></br>
+
+<!--Model-->
+<button data-bs-target="#myModal" data-bs-toggle="modal" class="btn btn-primary"> Click</button>
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>This is header</h1>
+            </div>
+            <div class="modal-body">
+                <h1>This is header</h1>
+            </div>
+            <div class="modal-footer">
+                <h1>This is header</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+</br></br></br></br>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</br></br>
+<!--List-->
+<ul class="list-group">
+    <li class="list-group-item">Item 1</li>
+    <li class="list-group-item">Item 2</li>
+    <li class="list-group-item">Item 3</li>
+    <li class="list-group-item">Item 4</li>
+    <li class="list-group-item">Item 5</li>
+    <li class="list-group-item">Item 6</li>
+</ul>
+
+</br></br></br></br>
+    <script src="./bootstrap.bundle.js></script>
+</body>
+</html>
